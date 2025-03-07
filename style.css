@@ -1,0 +1,102 @@
+body{
+    background-color:black;
+    text-align: center
+}
+.search-container{
+   display: grid;
+   grid-auto-flow:column ;
+   gap: 3px;
+   align-items: center;
+   margin-top: 10px;
+   
+}
+button{
+    padding: 10px;
+    
+    color: rgb(145, 91, 10);
+    border: none;
+    cursor: pointer;
+
+}
+h1{
+    font-size: 70px;
+    color:red;
+    text-shadow: 1px 1px 2px white, 0 0 25px red , 0 0 5px red;
+    
+        
+      
+}
+
+.search-container button, .input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  .navbar {
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    overflow: auto;
+   
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0 50px;
+  }
+  
+  .navbar a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .active{
+    background-color:red;
+    text-decoration: none;
+  }
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  .slideshow {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+}
+
+.slide {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    opacity: 0;
+    animation: slideshow 24s infinite;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 3s; }
+.slide:nth-child(3) { animation-delay: 6s; }
+.slide:nth-child(4) { animation-delay: 9s; }
+.slide:nth-child(5) { animation-delay: 12s; }
+.slide:nth-child(6) { animation-delay: 15s; }
+.slide:nth-child(7) { animation-delay: 18s; }
+.slide:nth-child(8) { animation-delay: 21s; }
+.slide:nth-child(9) { animation-delay: 24s; }
+
+
+
+@keyframes slideshow {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
